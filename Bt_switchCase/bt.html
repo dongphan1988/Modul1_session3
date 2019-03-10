@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="month">
+<button type="button" onclick="clicke()">SUBMIT</button>
+<script>
+    function clicke() {
+        let day = 31;
+        let monthvalue = parseInt( document.getElementById( "month" ).value );
+        switch (monthvalue) {
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                day = 30 ;
+                break;
+            case 2:
+                day = "28 hoac 29"
+
+        }document.write("thang "+monthvalue+" co "+day+" ngay ");
+    }
+</script>
+</body>
+</html>
